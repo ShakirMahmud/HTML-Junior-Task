@@ -41,7 +41,7 @@
           </ul>
         </div>
       </div>
-      <!-- Main Nav -->
+      <!-- search Nav -->
       <nav class="container main-nav">
         <div class="logo">
           <img src="./assets//6vally-logo.png" alt="" />
@@ -73,136 +73,261 @@
     </header>
     <main>
       <!-- Browse category section -->
-      <section class="browse-category-section">
-        <div class="container browse-category-container">
-          <div class="browse-category">
-            <i class="fa-solid fa-bars"></i>
-            <p class="browse-category-para">Browse Category</p>
-            <i class="fa-solid fa-angle-down"></i>
+      <div class="sticky">
+        <section class="browse-category-section">
+          <div class="container browse-category-container">
+            <div class="browse-category">
+              <i class="fa-solid fa-bars"></i>
+              <p class="browse-category-para">Browse Category</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div>
+              <ul class="browse-category-list">
+                <li>Home</li>
+                <li>
+                  <span>Offers</span>
+                  <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li>
+                  <span>Stores</span>
+                  <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li>
+                  <span>Brands</span>
+                  <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li style="display: flex; align-items: center">
+                  <span>Discounted Products</span>
+                  <img
+                    style="margin-left: 10px"
+                    width="24"
+                    height="24"
+                    src="https://img.icons8.com/windows/32/discount.png"
+                    alt="discount"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div style="display: flex; align-items: center">
+              <div class="user-icon">
+                <i style="color: white" class="fa-solid fa-user"></i>
+              </div>
+              <span class="login">Login / Register</span>
+            </div>
+            <div class="icon-div">
+              <div>
+                <div class="icon-code">
+                  <i class="fa-solid fa-code-compare"></i>
+                </div>
+                <div class="badge">
+                  <span>6</span>
+                </div>
+              </div>
+              <div>
+                <div class="icon-heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="badge">
+                  <span>6</span>
+                </div>
+              </div>
+              <div>
+                <div class="icon-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="badge">
+                  <span>6</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <ul class="browse-category-list">
-              <li>Home</li>
+        </section>
+      </div>
+      <!-- Main section -->
+      <section class="container">
+        <section class="main-section">
+          <!-- Left Aside -->
+          <aside class="left-aside">
+            <h4>Find What You need</h4>
+            <ul class="left-aside-list">
               <li>
-                <span>Offers</span>
-                <i class="fa-solid fa-angle-down"></i>
+                <span class="para-primary">Audio</span>
+                <i class="fa-solid fa-angle-right"></i>
               </li>
               <li>
-                <span>Stores</span>
-                <i class="fa-solid fa-angle-down"></i>
+                <span class="para-primary">Smartphone</span>
+                <i class="fa-solid fa-angle-right"></i>
               </li>
               <li>
-                <span>Brands</span>
-                <i class="fa-solid fa-angle-down"></i>
+                <span class="para-primary">Wearable</span>
+                <i class="fa-solid fa-angle-right"></i>
               </li>
-              <li style="display: flex; align-items: center">
-                <span>Discounted Products</span>
-                <img
-                  style="margin-left: 10px"
-                  width="24"
-                  height="24"
-                  src="https://img.icons8.com/windows/32/discount.png"
-                  alt="discount"
-                />
+              <li>
+                <span class="para-primary">TV & Home Appliance</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <span class="para-primary">Mobile Accessories</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <span class="para-primary">Computer & Office</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <span class="para-primary">Camera Accessories</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <span class="para-primary">Network Components</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <span class="para-primary">Laptop, Tabs & Notebooks</span>
+                <i class="fa-solid fa-angle-right"></i>
               </li>
             </ul>
+            <div class="view-all">
+              <a href="#">View all</a>
+            </div>
+          </aside>
+          <!-- main -->
+          <section class="carousel">
+            <div class="carousel-main">
+              <img id="main-slide" src="./assets/thumb1.png" alt="Main Slide" />
+              <div class="pagination" id="pagination-dots"></div>
+            </div>
+            <div class="carousel-thumbnails">
+              <img id="thumb1" src="./assets/thumb2.png" alt="Thumbnail 1" />
+              <img id="thumb2" src="./assets/thumb3.png" alt="Thumbnail 2" />
+            </div>
+          </section>
+          <!-- Right Aside -->
+          <aside style="margin-top: 1rem">
+            <img src="./assets/right_side.png" alt="" />
+          </aside>
+        </section>
+      </section>
+      <!-- Product section -->
+      <section class="container product-section">
+        <div class="deals-container">
+          <div class="deals">
+            <img src="/assets/flashDeals.png" alt="" />
           </div>
-          <div style="display: flex; align-items: center">
-            <div class="user-icon">
-              <i style="color: white" class="fa-solid fa-user"></i>
+          <p class="deals-para">Hurry up ! <span>Offer ends in:</span></p>
+          <div class="timer">
+            <div class="days">
+              <div class="timer-div">
+                <span id="days">23</span>
+              </div>
+              <p class="timer-para">Days</p>
             </div>
-            <span class="login">Login / Register</span>
-          </div>
-          <div class="icon-div">
-            <div>
-              <div class="icon-code">
-                <i class="fa-solid fa-code-compare"></i>
+            <div class="hours">
+              <div class="timer-div">
+                <span id="hours">23</span>
               </div>
-              <div class="badge">
-                <span>6</span>
-              </div>
+              <p class="timer-para">Hours</p>
             </div>
-            <div>
-              <div class="icon-heart">
-                <i class="fa-regular fa-heart"></i>
+            <div class="minutes">
+              <div class="timer-div">
+                <span id="minutes">23</span>
               </div>
-              <div class="badge">
-                <span>6</span>
-              </div>
+              <p class="timer-para">Minutes</p>
             </div>
-            <div>
-              <div class="icon-cart">
-                <i class="fas fa-shopping-cart"></i>
+            <div class="seconds">
+              <div class="timer-div">
+                <span id="seconds">23</span>
               </div>
-              <div class="badge">
-                <span>6</span>
-              </div>
+              <p class="timer-para">Seconds</p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Main section -->
-      <section class="container main-section">
-        <!-- Left Aside -->
-        <aside class="left-aside">
-          <h4>Find What You need</h4>
-          <ul class="left-aside-list">
-            <li>
-              <span class="para-primary">Audio</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </li>
-            <li>
-              <span class="para-primary">Smartphone</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </li>
-            <li>
-              <span class="para-primary">Wearable</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </li>
-            <li>
-              <span class="para-primary">TV & Home Appliance</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </li>
-            <li>
-              <span class="para-primary">Mobile Accessories</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </li>
-            <li>
-              <span class="para-primary">Computer & Office</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </li>
-            <li>
-              <span class="para-primary">Camera Accessories</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </li>
-            <li>
-              <span class="para-primary">Network Components</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </li>
-            <li>
-              <span class="para-primary">Laptop, Tabs & Notebooks</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </li>
-          </ul>
-          <div class="view-all">
-            <a href="#">View all</a>
+        <div class="product-container">
+          <div class="product-wrapper">
+            <div class="product-card">
+              <span class="discount-badge">-20%</span>
+              <img src="./assets/headphone.png" alt="headphone" />
+              <div class="rating">★★★★★ <span>(15)</span></div>
+              <p class="store-name">Morning Mart</p>
+              <h3 class="product-name">
+                P4 Wireless Bluetooth Headphone with FM Stereo Radio
+              </h3>
+              <div class="price">
+                <span class="original-price">15$</span>
+                <span class="discounted-price">12$</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <span class="discount-badge">-20%</span>
+              <img src="./assets/watch.png" alt="smart watch" />
+              <div class="rating">★★★★★ <span>(10)</span></div>
+              <p class="store-name">Morning Mart</p>
+              <h3 class="product-name">
+                A1 Smart Watch Pedometer Digital Analog Sports
+              </h3>
+              <div class="price">
+                <span class="original-price">15$</span>
+                <span class="discounted-price">12$</span>
+              </div>
+              <div class="lightning">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+            </div>
+            <div class="product-card">
+              <span class="discount-badge">-20%</span>
+              <img src="./assets/earphone.png" alt="Air Buds" />
+              <div class="rating">★★★★★ <span>(15)</span></div>
+              <p class="store-name">Morning Mart</p>
+              <h3 class="product-name">
+                Lenovo AirPods Pro - Bluetooth Headphone
+              </h3>
+              <div class="price">
+                <span class="original-price">15$</span>
+                <span class="discounted-price">12$</span>
+              </div>
+              <div class="sold-out">
+                <p>Sorry, this item is currently sold out</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <span class="discount-badge">-20%</span> 
+              <img src="./assets/vr.png" alt="VR" />
+              <div class="rating">★★★★★ <span>(15)</span></div>
+              <p class="store-name">Morning Mart</p>
+              <h3 class="product-name">
+                Zeiss VR One Plus Virtual Reality Headset for Smartphones
+              </h3>
+              <div class="price">
+                <span class="original-price">15$</span>
+                <span class="discounted-price">12$</span>
+              </div>
+              <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            <div class="product-card">
+              <span class="discount-badge">-20%</span>
+              <img src="./assets/headphone.png" alt="headphone" />
+              <div class="rating">★★★★★ <span>(15)</span></div>
+              <p class="store-name">Morning Mart</p>
+              <h3 class="product-name">
+                P4 Wireless Bluetooth Headphone with FM Stereo Radio
+              </h3>
+              <div class="price">
+                <span class="original-price">15$</span>
+                <span class="discounted-price">12$</span>
+              </div>
+            </div>
           </div>
-        </aside>
-        <!-- main -->
-        <section class="carousel">
-          <div class="carousel-main">
-            <img id="main-slide" src="./assets/thumb1.png" alt="Main Slide" />
-            <div class="pagination" id="pagination-dots"></div>
+
+          <div class="prev-btn">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
           </div>
-          <div class="carousel-thumbnails">
-            <img id="thumb1" src="./assets/thumb2.png" alt="Thumbnail 1" />
-            <img id="thumb2" src="./assets/thumb3.png" alt="Thumbnail 2" />
+          <div class="next-btn">
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
           </div>
-        </section>
-        <!-- Right Aside -->
-        <aside>
-          <img src="./assets/right_side.png" alt="" />
-        </aside>
+        </div>
+        <div class="gradient"></div>
       </section>
     </main>
     <script src="./js/home.js"></script>

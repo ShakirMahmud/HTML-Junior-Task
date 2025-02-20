@@ -53,3 +53,85 @@ setInterval(() => {
 
 createDots();
 updateSlide();
+
+function startCountdown() {
+    const targetDate = new Date("2025-03-16T23:59:59").getTime();
+
+    function updateTimer() {
+        const now = new Date().getTime();
+        const timeLeft = targetDate - now;
+
+        if (timeLeft < 0) {
+            document.getElementById("days").textContent = "00";
+            document.getElementById("hours").textContent = "00";
+            document.getElementById("minutes").textContent = "00";
+            document.getElementById("seconds").textContent = "00";
+            clearInterval(countdownInterval);
+            return;
+        }
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = days.toString().padStart(2, '0');
+        document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+        document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+    }
+
+    updateTimer();
+    const countdownInterval = setInterval(updateTimer, 1000);
+}
+
+startCountdown();
+
+const wrapper = document.querySelector('.product-wrapper');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const cards = document.querySelectorAll('.product-card');
+
+let currentCard = 0;
+
+
+const cardWidth = cards[0].offsetWidth + 31;
+
+function slideCards(direction) {
+    if (direction === 'next') {
+        currentCard++;
+        if (currentCard >= cards.length - 3) { 
+            currentCard = 0;
+        }
+    } else {
+        currentCard--;
+        if (currentCard < 0) {
+            currentCard = cards.length - 4;
+        }
+    }
+
+    wrapper.style.transform = `translateX(-${cardWidth * currentCard}px)`;
+}
+
+nextBtn.addEventListener('click', () => {
+    slideCards('next');
+});
+
+prevBtn.addEventListener('click', () => {
+    slideCards('prev');
+});
+
+let autoSlide = setInterval(() => {
+    slideCards('next');
+}, 3000);
+
+wrapper.addEventListener('mouseenter', () => {
+    clearInterval(autoSlide);
+});
+
+wrapper.addEventListener('mouseleave', () => {
+    autoSlide = setInterval(() => {
+        slideCards('next');
+    }, 3000);
+});
+
