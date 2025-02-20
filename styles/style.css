@@ -63,10 +63,6 @@ body {
     color: #515755;
     margin-left: 0.25rem;
 }
-.flag-img{
-    width: 1rem;
-    height: 0.70rem;
-}
 
 /* main nav styles */
 .main-nav{
@@ -136,4 +132,107 @@ input[type="text"] {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+/* browse collection styles */
+.browse-category-section{
+    border:  1px solid rgba(185, 185, 185, 0.4);
+}
+.browse-category-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.browse-category{
+    background-color: #1455AC;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    color: white;
+}
+.browse-category i{
+    color: white;
+    margin-left: 1rem;
+}
+.browse-category-para{
+    font-size: 0.875rem;
+}
+.browse-category-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: start;
+    gap: 1.25rem;
+    list-style-type: none;
+    padding: 0;
+}
+.browse-category-list li{
+    cursor: pointer;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #222222;
+}
+.browse-category-list i{
+    color: #222222;
+    margin-left: 0.875rem;
+}
+.login{
+    font-size: 0.75rem;
+    color: #222222;
+}
+.user-icon{
+    background-color: #B9B9B9;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    display: flex;
+    align-items:last baseline;
+    justify-content: center;
+    margin-right: 7px;
+}
+.icon-div{
+    display: flex;
+    align-items: center;
+}
+.icon-div i{
+    color: #B9B9B9;
+    font-size: 1.25rem;
+}
+.icon-code{
+    border-right: 1px solid #B9B9B9;
+    border-left: 1px solid #B9B9B9;
+    padding: 1rem;
+}
+.icon-heart{
+    border-right: 1px solid #B9B9B9;
+    padding: 1rem;
+}
+.icon-cart{
+    padding: 1rem;
+}
+.icon-div > div {
+    position: relative; 
+    display: inline-block;
+}
+.badge{
+    position: absolute;
+    color: white;
+    top: 5px;
+    right: 5px;
+    left: auto;
+}
+.badge>span{
+    font-size: 0.75rem;
+    background-color: #1455AC;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
 }

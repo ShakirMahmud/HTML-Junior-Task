@@ -17,7 +17,9 @@
         <div class="container top-nav">
           <div class="phone">
             <i style="color: #1455ac" class="fa-solid fa-phone-volume"></i>
-            <a href="tel:+903275345543" class="phone-link para-primary">+90-327-5345543</a>
+            <a href="tel:+903275345543" class="phone-link para-primary"
+              >+90-327-5345543</a
+            >
           </div>
           <ul class="top-nav-right">
             <li>
@@ -26,7 +28,12 @@
               <i class="fa-solid fa-angle-down"></i>
             </li>
             <li>
-              <img src="./assets/Flag_of_the_United_States.png" class="flag-img" alt="US Flag">
+              <img
+                src="./assets/Flag_of_the_United_States.png"
+                width="16"
+                height="12"
+                alt="US Flag"
+              />
               <span class="top-nav-right-para">English</span>
               <i class="fa-solid fa-angle-down"></i>
             </li>
@@ -35,33 +42,105 @@
         </div>
       </div>
       <!-- Main Nav -->
-       <nav class="container main-nav">
-            <div class="logo">
-                <img src="./assets//6vally-logo.png" alt="">
-            </div>
-            <div class="search-container">
-                <button class="menu-btn">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-angle-down"></i>
-                </button>
-                <input type="text" placeholder="Search for items or store...">
-                <div class="search-btn-container">
-                <button class="search-btn">
-                    <i class="fa-solid fa-search"></i>
-                  </button>
-                </div>
-            </div>
-            <div class="home-banner">
-                <div>
-                  <p style="color: white; font-weight: 900; font-size: 1.125rem;">Get 50% OFF</p>
-                  <p style="color: white; font-size: 0.6875rem;">Download app now</p>
-                </div>
-                <div>
-                  <img src="./assets/gift.png" alt="">
-                </div>
-            </div>
-       </nav>
+      <nav class="container main-nav">
+        <div class="logo">
+          <img src="./assets//6vally-logo.png" alt="" />
+        </div>
+        <div class="search-container">
+          <button class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <input type="text" placeholder="Search for items or store..." />
+          <div class="search-btn-container">
+            <button class="search-btn">
+              <i class="fa-solid fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="home-banner">
+          <div>
+            <p style="color: white; font-weight: 900; font-size: 1.125rem">
+              Get 50% OFF
+            </p>
+            <p style="color: white; font-size: 0.6875rem">Download app now</p>
+          </div>
+          <div>
+            <img src="./assets/gift.png" alt="" />
+          </div>
+        </div>
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <!-- Browse category section -->
+      <section class="browse-category-section">
+        <div class="container browse-category-container">
+          <div class="browse-category">
+            <i class="fa-solid fa-bars"></i>
+            <p class="browse-category-para">Browse Category</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div>
+            <ul class="browse-category-list">
+              <li>Home</li>
+              <li>
+                <span>Offers</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </li>
+              <li>
+                <span>Stores</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </li>
+              <li>
+                <span>Brands</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </li>
+              <li style="display: flex; align-items: center">
+                <span>Discounted Products</span>
+                <img
+                  style="margin-left: 10px"
+                  width="24"
+                  height="24"
+                  src="https://img.icons8.com/windows/32/discount.png"
+                  alt="discount"
+                />
+              </li>
+            </ul>
+          </div>
+          <div style="display: flex; align-items: center">
+            <div class="user-icon">
+              <i style="color: white" class="fa-solid fa-user"></i>
+            </div>
+            <span class="login">Login / Register</span>
+          </div>
+          <div class="icon-div">
+            <div >
+              <div class="icon-code">
+                <i class="fa-solid fa-code-compare"></i>
+              </div>
+              <div class="badge">
+                <span>6</span>
+              </div>
+            </div>
+            <div>
+              <div class="icon-heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="badge">
+                <span>6</span>
+              </div>
+            </div>
+            <div>
+              <div class="icon-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="badge">
+                <span>6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
